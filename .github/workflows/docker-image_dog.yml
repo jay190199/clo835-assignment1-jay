@@ -32,7 +32,7 @@ jobs:
         ECR_REPOSITORY: clo835-assignment2-dogs
         IMAGE_TAG: dogsv1
       run: |
-        cd dogs/
+        cd environment/catsdogs-cloud9/dogs/
         ls -ltra
         # Docker build
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
